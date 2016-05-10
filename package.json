@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/andrewMacmurray/cast-oxfam-hackathon#readme",
   "dependencies": {
+    "bluebird": "^3.3.5",
     "env2": "^2.0.7",
     "hapi": "^13.4.0",
     "messagebird": "^2.1.0",
