@@ -10,9 +10,9 @@ Using the MessageBird API which gives the user the ability to text in credit, re
 
 The object being manipulated will contain the following:
 ```javascript
-{id: 12345678,
-originator: '0044123456789',
-body: 50.00,
+{id: 12345678
+originator: '+44123456789'
+body: 50
 createdDatetime: '2012-04-13:30'}
 ```
 
