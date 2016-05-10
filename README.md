@@ -4,3 +4,7 @@
 
 
 hackathon project for exchanging fruit and veg vouchers
+
+
+
+Using the MessageBird API which gives the user the ability to text in credit, receive bonus credit, then the users can show fruit and vegetables vendors the electronic voucher in exchange for the products.
