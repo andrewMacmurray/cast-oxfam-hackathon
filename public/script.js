@@ -26,6 +26,13 @@ function addCharge () {
    console.log('thing1')
    if(xhr.readyState === 4 && xhr.status === 200){
      console.log(xhr.responseText);
+     if (xhr.responseText) {
+       var success = document.getElementById('success')
+       success.classList.remove('hidden')
+     } else {
+       var failure = document.getElementById('failure')
+       failure.classList.remove('hidden')
+     }
    }
  }
  xhr.open('GET', '/charge/' + price + '/' + code);

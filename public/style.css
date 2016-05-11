@@ -1,0 +1,103 @@
+body {
+  background-color: #9FFF97;
+  font-family: lato;
+}
+
+.logo {
+  max-width: 100px;
+  text-align: center;
+  margin: 3em auto;
+}
+
+.logo-text {
+  text-align: center;
+  color: #75B85C;
+  font-size: 32px;
+  margin-top: -25px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.veg-forms {
+  display: block;
+  margin: 5em auto;
+  width: 60%;
+  color: #2A6623;
+}
+
+.redeem-voucher {
+  margin: 6em 0;
+}
+
+.messages {
+  margin: 2em 0;
+}
+
+button {
+  margin: 1.7em 0;
+  border: none;
+  padding: 1em 1.2em;
+  border-radius: 0.3em;
+  background-color: #FF7991;
+  color: #fff;
+  transition: 0.3s ease;
+  clear: both;
+}
+
+button:hover {
+  background-color: #25ace6;
+}
+
+input {
+  transition: 0.3s ease;
+  width: 30%;
+  min-width: 100px;
+  background-color: #FFF38C;
+  border: none;
+  border-radius: 0.2em;
+  padding: 0.5em 1.4em;
+  outline: none;
+  color: #fff;
+}
+
+input:hover,
+input:focus {
+  background-color: #FF7991;
+}
+
+.submit-number input,
+.submit-number button,
+.redeem-voucher input,
+.redeem-voucher button {
+  float: right;
+}
+
+#success,
+#failure {
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+#success {
+  color: #63CB25;
+}
+
+#failure {
+  color: #d93929;
+}
+
+.hidden {
+  opacity: 0!important;
+}
+
+.success {
+  opacity: 1!important;
+}
+
+@media (max-width: 500px) {
+  p {
+    font-size: 12px;
+  }
+}
