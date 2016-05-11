@@ -3,14 +3,34 @@
   <head>
     <title></title>
     <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="initial-scale=1">
   </head>
   <body>
-    Input your number: <input type='text' id='number' />
-    Input your credit amount: <input type='text' id='credit' />
-      <button id="but">Sumbit Number</button>
-    Input the price value: <input type='text' id='price' />
-    Input your code: <input type='text' id='code' />
-      <button id="chargebutton">Sumbit Value</button>
+    <div class="logo">
+      <img src='grapes.png' />
+    </div>
+    <p class='logo-text'>Veg Vouch</p>
+    <div class='veg-forms'>
+      <div class='submit-number'>
+        <p>Input your number: <input type='text' id='number' /></p>
+        <p>Input your credit amount: <input type='text' id='credit' />
+        <br/>
+        <button id="but">Sumbit Number</button></p>
+      </div>
+
+      <div class='redeem-voucher'>
+        <p>Input the price value: <input type='text' id='price' /></p>
+        <p>Input your code: <input type='text' id='code' />
+        <br/>
+        <button id="chargebutton">Sumbit Value</button></p>
+      </div>
+
+      <div class='messages'>
+        <p id="success" class="hidden">Your transaction went through!</p>
+        <p id="failure" class="hidden">Insufficient funds, please credit your account</p>
+      </div>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
