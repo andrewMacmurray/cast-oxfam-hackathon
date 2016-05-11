@@ -1,17 +1,16 @@
-var addUser = () => {
-  var xhttp = new XMLHttpRequest();
-  console.log("submitted");
-  xhttp.onreadystatechange = function() {
-    if (xhttp.readyState == 4 && xhttp.status == 200) {
-      console.log(xhttp.responseText)
+const addUser = () => {
+  console.log('working');
+  const number = document.getElementById('number').value
+  const credit = document.getElementById('credit').value
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = () => {
+    console.log('thing')
+    if(xhr.readyState === 4 && xhr.status === 200){
+      console.log(xhr.responseText);
     }
-  };
-  var url = "/addUser/" + document.getElementsById('number').input + "/" + document.getElementsById("credit").input;
-  console.log(url);
-  xhttp.open("GET", "/addUser/" + document.getElementsById('number').input + "/" + document.getElementsById("credit").input);
-  xhttp.send();
+  }
+  xhr.open('GET', '/addUser/' + number + '/' + credit);
+  xhr.send();
 }
 
-document.getElementById('but').addEventListener('click', thing)
-
-const thing = () => console.log('hi')
+document.getElementById('but').addEventListener('click', addUser);
