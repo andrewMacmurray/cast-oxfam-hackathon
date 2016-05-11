@@ -17,10 +17,10 @@ document.getElementById('but').addEventListener('click', addUser);
 
 
 
-const addCharge = () => {
+function addCharge () {
  console.log(' charge working');
- const price = document.getElementById('price').value
- const code = document.getElementById('code').value
+ var price = document.getElementById('price').value
+ var code = document.getElementById('code').value
  var xhr = new XMLHttpRequest();
  xhr.onreadystatechange = () => {
    console.log('thing1')
